@@ -10,6 +10,7 @@ namespace W9_assignment_template.Models
     {
         // Common properties for all monsters
         public int AggressionLevel { get; set; }
-
+        
+        public virtual ICollection<Ability> Abilities { get; set; }
     }
 }
